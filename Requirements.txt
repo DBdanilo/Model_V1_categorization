@@ -1,0 +1,37 @@
+# ============================================
+# CORE - Bibliotecas básicas
+# ============================================
+pandas==2.1.0
+numpy==1.24.4
+requests==2.31.0
+python-dotenv==1.0.0
+tqdm==4.66.0
+
+# ============================================
+# EMBEDDINGS - Gerar vetores a partir de texto
+# ============================================
+sentence-transformers==2.2.2
+torch==2.0.1
+torchvision==0.15.2
+torchaudio==2.0.2
+
+# ============================================
+# FAISS - Busca vetorial (COSMO)
+# ============================================
+faiss-cpu==1.7.4
+
+# ============================================
+# ONNX - Exportar e rodar o modelo
+# ============================================
+onnx==1.14.0
+onnxruntime==1.15.0
+optimum==1.13.2
+transformers==4.35.0
+tokenizers==0.14.1
+
+# ============================================
+# UTILITÁRIOS ADICIONAIS
+# ============================================
+scikit-learn==1.3.0
+matplotlib==3.7.2
+seaborn==0.12.2

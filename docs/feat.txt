@@ -1,0 +1,61 @@
+CAMPOS_ESSENCIAIS = {
+    # Para AMBOS os endpoints (obrigatórios)
+    'transactionName': {
+        'cartao': 'transactionName',
+        'conta': 'transactionName',
+        'uso': 'ENTRADA_PRINCIPAL',
+        'prioridade': 1
+    },
+    'creditDebitType': {
+        'cartao': 'creditDebitType',
+        'conta': 'creditDebitType',
+        'uso': 'FILTRO',
+        'prioridade': 2
+    },
+    'amount': {
+        'cartao': 'brazilianAmount.amount',
+        'conta': 'transactionAmount.amount',
+        'uso': 'FEATURE',
+        'prioridade': 3
+    },
+    'currency': {
+        'cartao': 'brazilianAmount.currency',
+        'conta': 'transactionAmount.currency',
+        'uso': 'FEATURE',
+        'prioridade': 4
+    },
+    'transactionDateTime': {
+        'cartao': 'transactionDateTime',
+        'conta': 'transactionDateTime',
+        'uso': 'FEATURE',
+        'prioridade': 5
+    },
+    # Para CARTÃO (prioridade alta)
+    'payeeMCC': {
+        'cartao': 'payeeMCC',
+        'conta': None,
+        'uso': 'CATEGORIA_PRINCIPAL',
+        'prioridade': 1
+    },
+    # Para CONTA (prioridade alta)
+    'type': {
+        'cartao': None,
+        'conta': 'type',
+        'uso': 'CATEGORIA_SECUNDARIA',
+        'prioridade': 2
+    },
+    # Fallback para texto
+    'additionalInfo': {
+        'cartao': 'transactionalAdditionalInfo',
+        'conta': 'typeAdditionalInfo',
+        'uso': 'FALLBACK_TEXTO',
+        'prioridade': 6
+    },
+    # Identificação da contraparte (conta)
+    'partieCnpjCpf': {
+        'cartao': None,
+        'conta': 'partieCnpjCpf',
+        'uso': 'METADADO',
+        'prioridade': 7
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "versao": "1.0.0",
+  "total_merchants": 1000,
+  "dimensao_embedding": 384,
+  "total_categorias": 11,
+  "categorias": [
+    "Entretenimento",
+    "Viagem",
+    "Alimentacao",
+    "Fintech",
+    "Lazer",
+    "Transporte",
+    "Varejo",
+    "Servicos",
+    "Saude",
+    "Supermercado",
+    "Combustivel"
+  ],
+  "limiar_confianca": 0.7,
+  "modelo": "paraphrase-multilingual-MiniLM-L12-v2"
+}
